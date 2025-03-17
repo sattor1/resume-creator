@@ -11,6 +11,7 @@ export const Input = ({
   onChange,
   placeholder,
   required = false,
+  className,
   ...props
 }: IProps) => {
   const handleChange = useCallback(
@@ -22,7 +23,7 @@ export const Input = ({
     [onChange]
   );
 
-  const classes = 'w-full text-xl py-2 px-4 rounded-lg bg-primary';
+  const classes = `w-full text-xl py-2 px-4 rounded-lg bg-primary ${className}`;
 
   return (
     <input

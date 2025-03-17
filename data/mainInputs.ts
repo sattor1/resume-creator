@@ -8,15 +8,15 @@ export type TInputKeys =
   | 'email'
   | 'description';
 
-export interface IInput {
+export interface IInput<K> {
   id: number;
-  key: TInputKeys;
+  key: K;
   label?: string;
   placeholder?: string;
   required?: boolean;
 }
 
-export const inputsData: Array<IInput> = [
+export const inputsData: Array<IInput<TInputKeys>> = [
   { id: 1, key: 'firstName', placeholder: 'First name', required: true },
   { id: 2, key: 'lastName', placeholder: 'Last name' },
   { id: 3, key: 'title', placeholder: 'Title' },

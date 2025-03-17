@@ -1,5 +1,5 @@
 import { Fieldset } from './Fieldset';
-import { inputsData, TInputKeys } from '../../data/inputs';
+import { inputsData, TInputKeys } from '../../data/mainInputs';
 import { Input } from './Input';
 import { useState } from 'react';
 
